@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte-rendu de Réunion</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .highlight {
+            background-color: #e6ffe6;
+        }
+        .chart-container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Compte-rendu de la réunion du Vendredi 27 Juillet 2024</h1>
+    
+    <h2>Participants :</h2>
+    <p>Célia, Karim, Dana, Alain, Inès, Jean-Marie, Miguel, Paul</p>
+
+    <h2>Animateurs :</h2>
+    <p>Célia et Karim</p>
+
+    <h2>Bulletin Circo 3</h2>
+    
+    <table>
+        <tr>
+            <th>Arguments en faveur d'un bulletin LFI</th>
+            <th>Participants d'accord</th>
+            <th>Arguments en faveur d'un bulletin NFP</th>
+            <th>Participants d'accord</th>
+        </tr>
+        <tr>
+            <td>Favoriser la discussion avec la population et attirer de nouveaux adhérents</td>
+            <td>Jean-Marie, Dana, Célia</td>
+            <td>Collaboration avec Léa, ne pas en faire une propagande</td>
+            <td>Karim, Alain, Miguel, Inès</td>
+        </tr>
+        <tr>
+            <td>Rester fidèle à la position de LFI</td>
+            <td>Jean-Marie</td>
+            <td>Unir sur la base commune de l'écologie, du social, du féminisme, de l'antifascisme, et pour la paix</td>
+            <td>Alain</td>
+        </tr>
+        <tr>
+            <td>Financement par LFI</td>
+            <td>Dana, Célia</td>
+            <td>Importance de trouver un consensus sans scission du NFP</td>
+            <td>Inès</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Nécessité d'une charte éditoriale claire</td>
+            <td>Karim</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Inclure des associations et des syndicats pour utiliser la force du nombre</td>
+            <td>Alain, Miguel</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Question sur le contenu et le financement</td>
+            <td>Dana</td>
+        </tr>
+    </table>
+
+    <div class="chart-container">
+        <canvas id="bulletinChart"></canvas>
+    </div>
+
+    <h3>Questions à discuter pour le bulletin LFI</h3>
+    <ul>
+        <li>Quel contenu mettre dans un bulletin LFI ?</li>
+        <li>Comment structurer le comité de rédaction ?</li>
+        <li>Comment financer le bulletin (papier, numérique) ?</li>
+        <li>Quel sera le rôle de Léa dans la décision finale ?</li>
+    </ul>
+
+    <h3>Questions à discuter pour le bulletin NFP</h3>
+    <ul>
+        <li>Comment assurer une collaboration efficace avec Léa sans faire de propagande ?</li>
+        <li>Comment identifier les différences entre les points de vue pour trouver un consensus ?</li>
+        <li>Quel financement pour le bulletin NFP ?</li>
+        <li>Comment inclure d'autres formations politiques et associations ?</li>
+    </ul>
+
+    <h2>Création d'un nouveau GA</h2>
+    
+    <table>
+        <tr>
+            <th>Arguments en faveur de la création d'un nouveau GA</th>
+            <th>Participants d'accord</th>
+        </tr>
+        <tr>
+            <td>Possibilité de faire plus d'actions en dehors des périodes électorales</td>
+            <td>Jean-Marie, Dana, Paul, Karim</td>
+        </tr>
+        <tr>
+            <td>Cohérence avec le groupe actuel, qui est déjà engagé dans un projet commun</td>
+            <td>Paul, Karim</td>
+        </tr>
+        <tr>
+            <td>Le GA actuel n'est actif que pendant les périodes électorales</td>
+            <td>Jean-Marie</td>
+        </tr>
+        <tr>
+            <td>Importance de continuer le moment politique et de rester unis</td>
+            <td>Karim, Alain</td>
+        </tr>
+        <tr>
+            <td>Besoin d'un GA qui développe des aspects politiques et discute avec la population</td>
+            <td>Jean-Marie</td>
+        </tr>
+        <tr>
+            <td>Opportunité de créer des événements moins formels pour renforcer les liens</td>
+            <td>Dana</td>
+        </tr>
+        <tr>
+            <td>Alignement avec les électeurs du NFP pour des actions plus cohérentes</td>
+            <td>Alain</td>
+        </tr>
+        <tr>
+            <td>Mode de fonctionnement bénévole et accessible</td>
+            <td>Karim</td>
+        </tr>
+        <tr>
+            <td>Critique du GA actuel, qui ne met pas toutes ses forces dans la bataille</td>
+            <td>Jean-Marie</td>
+        </tr>
+    </table>
+
+    <div class="chart-container">
+        <canvas id="gaChart"></canvas>
+    </div>
+
+    <h3>Questions à discuter pour la création d'un nouveau GA</h3>
+    <ul>
+        <li>Comment structurer le nouveau GA pour qu'il soit efficace et pérenne ?</li>
+        <li>Comment assurer la continuité de l'énergie post-campagne ?</li>
+        <li>Quelles actions et outils adopter en dehors des périodes électorales ?</li>
+        <li>Comment organiser la prise de décision dans le nouveau GA ?</li>
+        <li>Quels sujets prioritaires pour les actions du GA (ex. : contre la politique de Macron) ?</li>
+        <li>Comment inclure plus de militants et d'associations dans le nouveau GA ?</li>
+        <li>Quelle méthode de communication (non violente, intersectionnelle) utiliser dans le GA ?</li>
+    </ul>
+
+    <h3>Position sur la création d'un nouveau GA</h3>
+    
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Participants</th>
+        </tr>
+        <tr class="highlight">
+            <td>Pour la création d'un nouveau GA</td>
+            <td>Jean-Marie, Dana, Paul, Karim</td>
+        </tr>
+        <tr>
+            <td>Contre la création d'un nouveau GA</td>
+            <td>Aucun</td>
+        </tr>
+        <tr>
+            <td>Pas d'avis ou indécis</td>
+            <td>Alain, Miguel</td>
+        </tr>
+    </table>
+
+    <script>
+        const bulletinData = {
+            labels: ['Bulletin LFI', 'Bulletin NFP'],
+            datasets: [{
+                label: 'Participants d\'accord',
+                data: [3, 4],
+                backgroundColor: ['#4caf50', '#2196f3']
+            }]
+        };
+
+        const gaData = {
+            labels: ['Pour', 'Contre', 'Indécis'],
+            datasets: [{
+                label: 'Participants',
+                data: [4, 0, 2],
+                backgroundColor: ['#4caf50', '#f44336', '#ffeb3b']
+            }]
+        };
+
+        const bulletinConfig = {
+            type: 'pie',
+            data: bulletinData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Accord sur le type de Bulletin'
+                    }
+                }
+            },
+        };
+
+        const gaConfig = {
+            type: 'pie',
+            data: gaData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Position sur la création d\'un nouveau GA'
+                    }
+                }
+            },
+        };
+
+        window.onload = function() {
+            const bulletinCtx = document.getElementById('bulletinChart').getContext('2d');
+            new Chart(bulletinCtx, bulletinConfig);
+
+            const gaCtx = document.getElementById('gaChart').getContext('2d');
+            new Chart(gaCtx, gaConfig);
+        };
+    </script>
+
+</body>
+</html>
